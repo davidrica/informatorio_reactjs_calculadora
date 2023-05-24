@@ -1,0 +1,82 @@
+:root {
+    --ancho: 400px;
+    --boton: calc(var(--ancho) / 4);
+    --botoncero: calc(var(--ancho) / 2);
+    --botonfunciones: calc(var(--ancho) / 5);
+}
+
+
+[tema="light"] {
+    --color-fuente: #000;
+    --color-fondo: #fff;
+}
+
+
+
+[tema="dark"] {
+    --color-fuente: #ffffff;
+    --color-fondo: #000000;
+}
+
+.calculator {
+    background-color: var(--color-fuente);
+    color: var(--color-fondo);
+    width: var(--ancho);
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.keypad {
+    margin-top: 10px;
+}
+
+.btn_numeros {
+    width: var(--boton);
+    height: var(--boton);
+    margin: 2px;
+    font-size: 16px;
+}
+
+.btn_funciones {
+    width: var(--botonfunciones);
+    height: var(--botonfunciones);
+    margin: 2px;
+    font-size: 16px;
+}
+
+.btn_cero {
+    width: var(--botoncero);
+    height: var(--boton);
+    margin: 2px;
+    font-size: 16px;
+}
+
+.btn_decimal {
+    width: var(--boton);
+    height: var(--boton);
+    margin: 2px;
+    font-size: 16px;
+}
+
+/* 
+button {
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+    font-size: 16px;
+} */
+
+#visor {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 18px;
+    text-align: right;
+}
+
+.error {
+    border-color: red;
+}
